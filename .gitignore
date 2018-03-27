@@ -1,0 +1,17 @@
+#Output Files
+*.o
+*.so
+*.a
+*.dll
+
+#Editor Files
+*~
+.\#*
+\#*
+*.sw[op]
+
+#Environment
+nohup*
+
+# Documentation
+docs/
