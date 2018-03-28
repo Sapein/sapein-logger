@@ -20,6 +20,13 @@ _Linux_
 2. Include `sapeint_logger.h` if you used `make install`, otherwise include `logger.h`
 3. Read through the Docs
 
+
+## Copyright and Licensing  
+All Copyright belongs to their respective owners. 
+
+This code is licensed under the MIT/Expat License, found in LICENSE.
+
+
 ## QnA
 
 #### Is this thread safe?  
@@ -39,8 +46,3 @@ It's to allow for a person to extend the library in a project that might require
 
 #### Doesn't the USER type increase complexity?  
 Yes, but not by that much. It only adds in 22 LoC at most, and is only ~18% of the codebase. So removing it only removes a small portion of the code, and the upkeep is extremely negligible, given that most of the code is relatively simple.
-
-## Copyright and Licensing  
-All Copyright belongs to their respective owners. 
-
-This code is licensed under the MIT/Expat License, found in LICENSE.
