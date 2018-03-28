@@ -8,6 +8,7 @@ This library is _NOT_ thread safe, to the best knoweldge of the authors. However
 
 #### Dependencies  
 * GCC (if you wish to use the makefile)
+* Doxygen (if you wish to generate the documentation/man files)
 
 #### Installation
 _Linux_
