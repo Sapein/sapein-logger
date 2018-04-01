@@ -30,14 +30,16 @@ docs:
 	doxygen
 
 install:
-	cp $(DESTDIR)$(PREFIX)/include/sapeint_logger.h	src/logger.h
-	cp $(DESTDIR)$(PREFIX)/lib $(OUTPUT_NAME).so
-	cp $(DESTDIR)$(PREFIX)/lib $(OUTPUT_NAME).a
+	cp src/logger.h $(DESTDIR)$(PREFIX)/include/sapeint_logger.h
+	cp $(OUTPUT_NAME).so $(DESTDIR)$(PREFIX)/lib
+	cp $(OUTPUT_NAME).a $(DESTDIR)$(PREFIX)/lib
+	ldconfig
 
 uninstall:
 	rm $(DESTDIR)$(PREFIX)/include/logger.h
 	rm $(DESTDIR)$(PREFIX)/lib/$(OUTPUT_NAME).so
 	rm $(DESTDIR)$(PREFIX)/lib/$(OUTPUT_NAME).a
+	ldconfig
 
 .SUFFIXES: .c .o 
 .c.o:
